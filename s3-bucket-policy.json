@@ -1,0 +1,17 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::s3_source_bucket_arn",
+        "arn:aws:s3:::s3_source_bucket_arn/*",
+		"arn:aws:s3:::s3_destination_bucket_arn",
+		"arn:aws:s3:::s3_destination_bucket_arn/*"
+      ]
+    }
+  ]
+}
